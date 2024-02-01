@@ -1,6 +1,10 @@
 {
   "scripts": {
-    "start":"vite"
+    "start":"vite",
+    
+    "build-css": "your-css-compile-command"
+    
+    
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
