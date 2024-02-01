@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.head{
+    @apply  font-semibold;
+    font-family: 'Playball', cursive;
+}
+.active{
+@apply text-[#d4a762];
+}
+select,input,textarea{
+    border:1.5px solid #d4a762;
+    outline:none;
+}
+
+
+.gfont{
+    font-family: 'Playball', cursive;
+}
+
+.logo>span{
+    @apply text-[#d4a762];
+}
+
+.btnbody{
+    @apply px-6 py-3 rounded-full justify-end hover:bg-black  hover:fill-[#d4a762] hover:text-[#d4a762] bg-[#d4a762] ;
+}
+.btn{
+    @apply px-2 py-2 rounded-full justify-end hover:bg-black  hover:fill-[#d4a762] hover:text-[#d4a762] bg-[#d4a762] ;
+}
+
+.group:hover button{
+    @apply bg-white;
+}
+.group button:hover{
+    @apply bg-black;
+}
+.group:hover{
+    @apply bg-[#d4a762];
+}
+
+#pages{
+
+    @apply hover:text-[#d4a762] bg-white;
+}
+
+.marque{
+   
+    animation: movert 5s linear infinite;
+}
+.marque:hover{
+    overflow:auto;
+}
+.marque2{
+    animation: movelft 5s linear infinite;
+}
+.marque2:hover{
+    overflow: auto;
+}
+@keyframes movelft  {
+    0%{
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes movert {
+    0%{                                 
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-25%);
+    }
+    
+}
+@media (max-width:1200px){
+    .top{
+    display: none;
+    }
+}
+@media (max-width:1000px){
+    .upright{
+        display: none;
+    }
+}
